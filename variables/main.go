@@ -11,4 +11,7 @@ func main() {
 
 	//print address of the variable (pointers :D)
 	fmt.Println(&x)
+
+	i := &x
+	fmt.Println(*i)
 }
