@@ -22,7 +22,8 @@ func main() {
 }
 
 func foo() {
-	fmt.Println("in foo")
+	n, _ := fmt.Println("in foo")
+	fmt.Println(n)
 }
 
 func bar() {
