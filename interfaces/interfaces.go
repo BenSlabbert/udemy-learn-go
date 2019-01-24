@@ -16,6 +16,10 @@ func (s secretAgent) speak() {
 	fmt.Println("my name is", s.first, ",", s.last)
 }
 
+func (p person) speak() {
+	fmt.Println("my name is", p.first, ",", p.last)
+}
+
 type human interface {
 	speak()
 }
@@ -33,6 +37,7 @@ func main() {
 	fmt.Println(sa1)
 
 	useHuman(sa1)
+	useHuman(sa1.person)
 }
 
 func useHuman(h human) {
