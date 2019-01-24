@@ -41,5 +41,14 @@ func main() {
 }
 
 func useHuman(h human) {
+
 	h.speak()
+
+	switch h.(type) {
+	case person:
+	case secretAgent:
+		h.speak()
+	default:
+		fmt.Println("default case for human")
+	}
 }
