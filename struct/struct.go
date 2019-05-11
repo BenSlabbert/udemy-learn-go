@@ -30,5 +30,7 @@ func main() {
 
 	fmt.Println(agent)
 	fmt.Println(agent.person)
+	fmt.Println(agent.person.first)
+	fmt.Println(agent.first)
 	fmt.Println(agent.ltk)
 }
